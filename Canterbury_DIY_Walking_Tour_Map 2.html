@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2a1706baf42e4788b35705022c22f95b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2a1706baf42e4788b35705022c22f95b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2a1706baf42e4788b35705022c22f95b = L.map(
+                "map_2a1706baf42e4788b35705022c22f95b",
+                {
+                    center: [51.2802, 1.0789],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d506b3d32707763f61a93ba29fd3e01a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2a1706baf42e4788b35705022c22f95b);
+        
+    
+            var marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf = L.markerClusterGroup(
+                {}
+            );
+            map_2a1706baf42e4788b35705022c22f95b.addLayer(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var marker_3c0679d01a7384f89f79d1905236359e = L.marker(
+                [51.284, 1.0732],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_dea8fd10361c83f4b73eb01f85c988d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3c0679d01a7384f89f79d1905236359e.setIcon(icon_dea8fd10361c83f4b73eb01f85c988d8);
+        
+    
+        var popup_9574c7cdbc0b16a9769deb1be6f6575a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db623f6b35c1b2929f01e96e43570d7c = $(`<div id="html_db623f6b35c1b2929f01e96e43570d7c" style="width: 100.0%; height: 100.0%;">Canterbury West Station</div>`)[0];
+            popup_9574c7cdbc0b16a9769deb1be6f6575a.setContent(html_db623f6b35c1b2929f01e96e43570d7c);
+        
+
+        marker_3c0679d01a7384f89f79d1905236359e.bindPopup(popup_9574c7cdbc0b16a9769deb1be6f6575a)
+        ;
+
+        
+    
+    
+            var marker_3333032d2dd363d9a6b752cd76a6b3bf = L.marker(
+                [51.2809, 1.0737],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_2924d2ee6a4ebbaf7ae57db9d0b331f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_3333032d2dd363d9a6b752cd76a6b3bf.setIcon(icon_2924d2ee6a4ebbaf7ae57db9d0b331f6);
+        
+    
+        var popup_c5dbc24fd176ff9e000a5bc2a4827d87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75cba0b55428d18d40c1564cb77af523 = $(`<div id="html_75cba0b55428d18d40c1564cb77af523" style="width: 100.0%; height: 100.0%;">Westgate Towers</div>`)[0];
+            popup_c5dbc24fd176ff9e000a5bc2a4827d87.setContent(html_75cba0b55428d18d40c1564cb77af523);
+        
+
+        marker_3333032d2dd363d9a6b752cd76a6b3bf.bindPopup(popup_c5dbc24fd176ff9e000a5bc2a4827d87)
+        ;
+
+        
+    
+    
+            var marker_8b165ceafe0a8a4abd8d510702edfb8b = L.marker(
+                [51.2795, 1.0761],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_46d10d060a9179b1253a7479bb43e9c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8b165ceafe0a8a4abd8d510702edfb8b.setIcon(icon_46d10d060a9179b1253a7479bb43e9c4);
+        
+    
+        var popup_75efd7b345bb07ac12fbb8faa8720872 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae2a4f239a6165e06bcd567c03266b03 = $(`<div id="html_ae2a4f239a6165e06bcd567c03266b03" style="width: 100.0%; height: 100.0%;">River Stour Walk</div>`)[0];
+            popup_75efd7b345bb07ac12fbb8faa8720872.setContent(html_ae2a4f239a6165e06bcd567c03266b03);
+        
+
+        marker_8b165ceafe0a8a4abd8d510702edfb8b.bindPopup(popup_75efd7b345bb07ac12fbb8faa8720872)
+        ;
+
+        
+    
+    
+            var marker_9b753ce957b7707fbe7884df3e3d1723 = L.marker(
+                [51.2798, 1.0835],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_cd3dfc7251d824a56d35b9c6e65cdc6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9b753ce957b7707fbe7884df3e3d1723.setIcon(icon_cd3dfc7251d824a56d35b9c6e65cdc6a);
+        
+    
+        var popup_a4677e479797afed3f9f14f347fff359 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fdf5730def176d176c1f9649f3976de = $(`<div id="html_3fdf5730def176d176c1f9649f3976de" style="width: 100.0%; height: 100.0%;">Canterbury Cathedral (outside view)</div>`)[0];
+            popup_a4677e479797afed3f9f14f347fff359.setContent(html_3fdf5730def176d176c1f9649f3976de);
+        
+
+        marker_9b753ce957b7707fbe7884df3e3d1723.bindPopup(popup_a4677e479797afed3f9f14f347fff359)
+        ;
+
+        
+    
+    
+            var marker_41676fab79b88af741bf171a0b8b80f9 = L.marker(
+                [51.2805, 1.0846],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_299dfa8e573ad4f97f4fb7f5bc95136c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_41676fab79b88af741bf171a0b8b80f9.setIcon(icon_299dfa8e573ad4f97f4fb7f5bc95136c);
+        
+    
+        var popup_2d370b75d8ea90544cd698e511d3ec81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2da1ff50313bf73cbb5f55a9995ef10 = $(`<div id="html_d2da1ff50313bf73cbb5f55a9995ef10" style="width: 100.0%; height: 100.0%;">King’s Mile</div>`)[0];
+            popup_2d370b75d8ea90544cd698e511d3ec81.setContent(html_d2da1ff50313bf73cbb5f55a9995ef10);
+        
+
+        marker_41676fab79b88af741bf171a0b8b80f9.bindPopup(popup_2d370b75d8ea90544cd698e511d3ec81)
+        ;
+
+        
+    
+    
+            var marker_17283de78503ac42f42f5081e7155d1f = L.marker(
+                [51.2787, 1.0935],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_51115affbce225df3bd33beec8a1a58c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_17283de78503ac42f42f5081e7155d1f.setIcon(icon_51115affbce225df3bd33beec8a1a58c);
+        
+    
+        var popup_e0c2377ab77c3e5554bc509cbaa8a524 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a21c5715d14d5ced988e20ed4bbe1da = $(`<div id="html_2a21c5715d14d5ced988e20ed4bbe1da" style="width: 100.0%; height: 100.0%;">St Martin's Church (optional)</div>`)[0];
+            popup_e0c2377ab77c3e5554bc509cbaa8a524.setContent(html_2a21c5715d14d5ced988e20ed4bbe1da);
+        
+
+        marker_17283de78503ac42f42f5081e7155d1f.bindPopup(popup_e0c2377ab77c3e5554bc509cbaa8a524)
+        ;
+
+        
+    
+    
+            var marker_7f68196b3406f834b06705576051ea51 = L.marker(
+                [51.2749, 1.0797],
+                {}
+            ).addTo(marker_cluster_7d7fa59312f5c0c812dbe1e1cc4dd9cf);
+        
+    
+            var icon_f017c22a1022cf6bf6d951732db73241 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7f68196b3406f834b06705576051ea51.setIcon(icon_f017c22a1022cf6bf6d951732db73241);
+        
+    
+        var popup_baf57be2ea06b1bfa30e1d4717cbf743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d56bbecdb62e5f8424ab88cc3ebe37f1 = $(`<div id="html_d56bbecdb62e5f8424ab88cc3ebe37f1" style="width: 100.0%; height: 100.0%;">Canterbury East Station (optional)</div>`)[0];
+            popup_baf57be2ea06b1bfa30e1d4717cbf743.setContent(html_d56bbecdb62e5f8424ab88cc3ebe37f1);
+        
+
+        marker_7f68196b3406f834b06705576051ea51.bindPopup(popup_baf57be2ea06b1bfa30e1d4717cbf743)
+        ;
+
+        
+    
+    
+            var poly_line_252813a2346906e9aed0ca9415692006 = L.polyline(
+                [[51.284, 1.0732], [51.2809, 1.0737], [51.2795, 1.0761], [51.2798, 1.0835], [51.2805, 1.0846], [51.2787, 1.0935], [51.2749, 1.0797]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2a1706baf42e4788b35705022c22f95b);
+        
+</script>
+</html>
